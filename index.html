@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visit Sri Lanka</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #2c3e50;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h1, h3 {
+            color: #2c3e50;
+        }
+
+        /* Navigation */
+        .navbar {
+            background-color: #87cefa;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .menu-toggle {
+            font-size: 30px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        /* Main Content */
+        .content {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Card View */
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .card-container {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Footer */
+        footer {
+            background-color: #87cefa;
+            padding: 15px;
+            text-align: center;
+            color: #fff;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="menu-toggle">&#9776;</div>
+        <a href="#" style="font-size: 30px;">Visit Sri Lanka</a>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Visit Sri Lanka</h1>
+        <p>Discover the beauty of Sri Lanka's 9 provinces. Plan your next adventure and explore scenic landscapes, vibrant cities, and rich culture.</p>
+
+<!-- Card View for Provinces -->
+<div class="card-container">
+    <!-- Central Province -->
+    <a href="central-province.html" class="card">
+        <img src="img/central/IMG-20241130-WA0005.jpg" alt="Central Province" class="card-image" data-images='["img/central/IMG-20241130-WA0006.jpg", "img/central/IMG-20241130-WA0007.jpg", "img/central/IMG-20241130-WA0008.jpg"]'>
+        <h3>Central Province</h3>
+        <p>Rich in culture and tea plantations.</p>
+    </a>
+    <!-- Western Province -->
+    <a href="western-province.html" class="card">
+        <img src="img/western/15.jpg" alt="Western Province" class="card-image" data-images='["img/western/2021-04-07.jpg", "img/western/2021-07-03.jpg"]'>
+        <h3>Western Province</h3>
+        <p>The bustling heart of Sri Lanka.</p>
+    </a>
+</div>
+
+<div class="card-container">
+    <!-- Southern Province -->
+    <a href="southern-province.html" class="card">
+        <img src="img/southern/sri-lanka-best-places-to-visit-hikkaduwa-beach.jpg" alt="Southern Province" class="card-image" data-images='["img/southern/2021-06-18.jpg", "img/southern/Screenshot (55).png", "img/southern/2023-02-11.jpg"]'>
+        <h3>Southern Province</h3>
+        <p>Relax on stunning beaches.</p>
+    </a>
+
+    <!-- Northern Province -->
+    <a href="northern-province.html" class="card">
+        <img src="img/northern/2021-10-03.png" alt="Northern Province" class="card-image" data-images='["img/northern/DSC_4674.JPG", "img/northern/IMG_1691.JPG", "img/northern/IMG_20180615_094921.jpg"]'>
+        <h3>Northern Province</h3>
+        <p>Explore Jaffna and the northern culture.</p>
+    </a>
+
+    <!-- Eastern Province -->
+    <a href="eastern-province.html" class="card">
+        <img src="img/eastern/4.jpg" alt="Eastern Province" class="card-image" data-images='["img/eastern/2020-10-07.jpg", "img/eastern/2023-06-29.jpg", "img/eastern/IMG_20220117_104120.jpg"]'>
+        <h3>Eastern Province</h3>
+        <p>Known for its pristine beaches.</p>
+    </a>
+
+    <!-- North Western Province -->
+    <a href="northwestern-province.html" class="card">
+        <img src="img/northwestern/siri-gautama-sambuddharaja.jpg" alt="North Western Province" class="card-image" data-images='["img/northwestern/as-per-the-folklore-by.jpg", "img/northwestern/rambodagalla-buddha-statue.jpg", "img/northwestern/caption.jpg"]'>
+        <h3>North Western Province</h3>
+        <p>A province of great history.</p>
+    </a>
+
+    <!-- North Central Province -->
+    <a href="northcentral-province.html" class="card">
+        <img src="img/northcentral/elephants.jpg" alt="North Central Province" class="card-image" data-images='["img/northcentral/around-polonnaruwa.jpg", "img/northcentral/isurumuniya-temple.jpg", "img/northcentral/maduru-oya-national-park.jpg"]'>
+        <h3>North Central Province</h3>
+        <p>Visit ancient ruins and cities.</p>
+    </a>
+
+    <!-- Uva Province -->
+    <a href="uva-province.html" class="card">
+        <img src="img/uva/baker-s-falls.jpg" alt="Uva Province" class="card-image" data-images='["img/uva/ella.jpg", "img/uva/lipton-s-seat.jpg", "img/uva/waterval.jpg"]'>
+        <h3>Uva Province</h3>
+        <p>Experience scenic hills.</p>
+    </a>
+
+    <!-- Sabaragamuwa Province -->
+    <a href="sabaragamuwa-province.html" class="card">
+        <img src="img/sabaragamuwa/20180115-104242-largejpg.jpg" alt="Sabaragamuwa Province" class="card-image" data-images='["img/sabaragamuwa/img-20171001-120316-largejpg.jpg", "img/sabaragamuwa/near-makulu-ella-falls.jpg", "img/sabaragamuwa/photo-of-down-streamthere.jpg"]'>
+        <h3>Sabaragamuwa Province</h3>
+        <p>Known for waterfalls and gems.</p>
+    </a>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Visit Sri Lanka. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Image Carousel -->
+    <script>
+        const cards = document.querySelectorAll(".card");
+        cards.forEach((card) => {
+            const images = JSON.parse(card.querySelector(".card-image").getAttribute("data-images"));
+            let currentIndex = 0;
+
+            function changeImage() {
+                const imgElement = card.querySelector(".card-image");
+
+                // Fade out
+                imgElement.style.opacity = 0;
+
+                setTimeout(() => {
+                    currentIndex = (currentIndex + 1) % images.length;
+                    imgElement.src = images[currentIndex];
+                    imgElement.style.opacity = 1; // Fade in
+                }, 1000);
+            }
+
+            setInterval(changeImage, 3000);
+        });
+    </script>
+</body>
+</html>
